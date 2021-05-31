@@ -11,7 +11,7 @@ function WeatherManual () {
 
 	useEffect(() => {
 		// Call Api that get the ip
-		fetch("https://api.myip.com").then(res => res.json())
+		fetch("https://api.myip.com", {headers: {'Access-Control-Allow-Origin': '*'}}).then(res => res.json())
 		.then(res => {
 			// Call api to obtain weather data
 			const { ip } = res;
