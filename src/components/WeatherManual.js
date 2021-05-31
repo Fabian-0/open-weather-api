@@ -32,9 +32,9 @@ function WeatherManual () {
 				};
 				setWeatherData(data);
 			})
-			// .catch(err => handlerError(history))
+			.catch(err => handlerError(history))
 		})
-		// .catch(err => handlerError(history))
+		.catch(err => handlerError(history))
 	},[]);
 
 	return(
