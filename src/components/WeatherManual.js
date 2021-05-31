@@ -34,7 +34,7 @@ function WeatherManual () {
 			})
 			// .catch(err => handlerError(history))
 		})
-		.catch(err => handlerError(history))
+		// .catch(err => handlerError(history))
 	},[]);
 
 	return(
