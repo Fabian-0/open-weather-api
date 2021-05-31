@@ -11,8 +11,9 @@ function WeatherManual () {
 
 	useEffect(() => {
 		// Call Api that get the ip
-		fetch("https://cors-anywhere.herokuapp.com/https://api.myip.com",  {headers: {'Access-Control-Allow-Origin': '*'}}).then(res => res.json())
+		fetch("https://api.ipify.org/?format=json").then(res => res.json())
 		.then(res => {
+			console.log(res);
 			// Call api to obtain weather data
 			const { ip } = res;
 			fetch(`http://api.weatherapi.com/v1/current.json?key=3daca7c5fff1442085c31533210702&q=${ip}`)
