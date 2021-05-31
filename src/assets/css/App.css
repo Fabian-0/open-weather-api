@@ -1,0 +1,70 @@
+/* Central cards styles */
+
+.locationPermiss__center, .weatherInfo__center {
+  margin: auto;
+  width: 60%;
+  max-width: 650px;
+  background-color: var(--seconadry);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.locationPermiss__title, .weatherInfo__title {
+  width: 100%;
+}
+
+.locationPermiss__title > svg , .locationPermiss__linkAPI, .weatherInfo__title {
+  text-decoration: none;
+  color: var(--third);
+}
+
+.locationPermiss__optionPosition {
+  width: 50%;
+  padding: 20px;
+}
+
+.locationPermiss__icon {
+  display: inline-block;
+  font-size: 6rem;
+}
+
+.locationPermiss__text {
+  margin: 30px;
+}
+
+.locationPermiss__btn, .weatherInfo__button {
+  background-color: var(--third);
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 200ms;
+}
+
+.weatherInfo__button {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.locationPermiss__btn:hover, .weatherInfo__button:hover {
+  color: var(--third);
+  background-color: var(--primary);
+}
+
+/* Central cards mediaqueries */
+
+
+@media (max-width: 850px) {
+  .locationPermiss__center, .weatherInfo__center {
+    width: 70%;
+  }
+  .locationPermiss__optionPosition {
+    width: 100%;
+  }
+}

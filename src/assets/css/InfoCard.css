@@ -1,0 +1,41 @@
+/* Info card styles */
+
+.weatherInfo {
+  text-align: center;
+}
+
+.weatherInfo__title {
+  font-size: 2.5rem;
+}
+
+.weatherInfo__cityName {
+  font-size: 1.5rem;
+  margin: 10px auto;
+  margin-bottom: 15px;
+}
+
+.weatherInfo__data-textStyle {
+  font-size: 1.25rem;
+  margin: 5px 0;
+}
+
+.weatherInfo__data {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weatherInfo__dataMiddle {
+  width: 50%;
+}
+
+.weatherInfo__data-textStyle > span{
+  color: var(--third);
+}
+
+@media (max-width: 850px) {
+  .weatherInfo__dataMiddle {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
