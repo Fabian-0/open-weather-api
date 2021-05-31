@@ -16,7 +16,7 @@ function WeatherManual () {
 			console.log(res);
 			// Call api to obtain weather data
 			const { ip } = res;
-			fetch(`http://api.weatherapi.com/v1/current.json?key=3daca7c5fff1442085c31533210702&q=${ip}`)
+			fetch(`https://api.weatherapi.com/v1/current.json?key=3daca7c5fff1442085c31533210702&q=${ip}`)
 			.then(res => res.json())
 			.then(res => {
 				const current = res.current;
