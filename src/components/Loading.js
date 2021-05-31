@@ -1,8 +1,13 @@
 import React from "react";
+import '../assets/css/loading.css';
 
 function Loading() {
   return(
-    <p>Loading...</p>
+    <div className="loading">
+      <div className="loadingCircle">
+        <div className="loadingCircleChild"></div>
+      </div>
+    </div>
   );
 }
 

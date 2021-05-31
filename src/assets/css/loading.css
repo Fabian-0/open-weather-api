@@ -1,0 +1,43 @@
+@keyframes loop {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loop-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.loading {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.loadingCircle,
+.loadingCircleChild {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-top: 5px solid #4c84ff;
+  border-right: 5px solid #4c84ff;
+  margin: auto;
+  display: flex;
+  animation: loop 2s infinite linear;
+}
+
+.loadingCircleChild {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  animation: loop-reverse 700ms infinite linear;
+}
